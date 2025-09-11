@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Playfair Display", serif;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    background: url("assets/bg.jpg");
+}
+
+#home button{
+    font-size: 40px;
+    margin-top: 2%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1; /* Fully visible */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle glow */
+  }
+  20% {
+    opacity: 0.8; /* Slightly less visible */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Stronger glow */
+  }
+  40% {
+    opacity: 1; /* Fully visible */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  60% {
+    opacity: 0.7; /* More transparent */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9); /* Intense glow */
+  }
+  80% {
+    opacity: 1; /* Fully visible */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    opacity: 0.9; /* Slightly less visible */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  }
+}
+
+#home button:hover{
+    background-color: rgb(191, 188, 188);
+}
+
+#home a{
+    text-decoration-line: none;
+    color: black;
+
+}
+
+#detail{
+    height: 100vh;
+    background: url(assets/bg2.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#detail #page{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+#detail #content{
+    margin-top: 50px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+#detail h1{
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+
+#detail ul{
+    line-height: 300%;
+}
+
+
+#detail img{
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+#detail img:hover{
+    filter: brightness(50%);
+
+}
+
+#detail ul li{
+    font-size: 20px;
+}
+
+#detail ul span{
+    font-weight: bold;
+}
+
+#hobbies{
+    height: 100vh;
+    background: url("assets/bg3.jpg");
+    padding: 50px;
+    text-align: center;
+}
+
+#hobbies h1{
+    font-family: "Playfair Display", serif;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#hobbies p{
+    text-align: justify;
+}
+
+#hobbies img{
+    width: 70%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#hobbies button{
+    font-family: "Playfair Display", serif;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+}
+
+#hobbies button:hover{
+    background-color: rgb(195, 196, 196);
+}
+
+#dream{
+    height: 100vh;
+    background: url("assets/bg4.jpg");
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    cursor: pointer;
+}
+
+
+#dream #content2{
+    width: 70%;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+#dream h1{
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    margin: 50px;
+}
+
+#dream button{
+    font-family: "Playfair Display", serif;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+}
+
+#dream button:hover{
+    background-color: rgb(195, 196, 196);
+}
+#later, #later2, #dream button{
+    visibility: hidden;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#explode{
+    height: 100vh;
+    background: url("assets/explode.gif");
+    /* background-size: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#explode h1{
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    margin: 50px;
+    text-align: center;
+}

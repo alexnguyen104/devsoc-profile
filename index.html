@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="home">
+        Hi, Xin Chào👋
+        <br>
+        I am Nguyen
+        <br>
+        <a href="#detail"><button>about me</button></a>
+    </div>
+
+    <div id="detail">
+        <div id="page">
+            <div id="content">
+                <h1>My Information</h1>
+                <br>
+                <ul>
+                    <li><span>Full Name:</span> Khoi Nguyen Nguyen</li>
+                    <li><span>From:</span> Vietnam 🇻🇳</li>
+                    <li><span>Degree:</span> Computer Science</li>
+                    <li><span>Year:</span> 1st</li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <a href="#hobbies"><img src="assets/pic.gif" alt="sleeping"></a>
+        </div>
+    </div>
+
+    <div id="hobbies">
+        <h1>My Hobbies</h1>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Football ⚽</h5>
+                        <p class="card-text">I have played football since I was a child and in high school, I even won a gold and 2 bronze medals.</p>
+                        <img src="assets/about.jpg" alt="hobby">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Guitar 🎸</h5>
+                        <p class="card-text">I can play acoustic and electric guitar. In addition, I used to be in 2 bands in highschool.</p>
+                        <img src="assets/about2.jpg" alt="hobby">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Anime 🎞️</h5>
+                        <p class="card-text">Anime is cool.</p>
+                        <img src="assets/about3.jpg" alt="hobby">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Coding 💻</h5>
+                        <p class="card-text">I usually write code in my spare time. However, I haven't found a favorite field yet. So I have done some projects in different fields such as web development, game development, LLM (Langchain), Computer Vision (CV2, Yolov8), etc.</p>
+                        <img src="assets/about4.gif" alt="hobby">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a href="#dream"><button>more</button></a>
+    </div>
+
+    <div id="dream">
+        <div id="content2">
+            <h1>Everybody has a dream...</h1>
+            <h1 id="later">Me too.</h1>
+            <h1 id="later2">My dream is to become a skilled software engineer, build a stable career, and have the impact to contribute to changing the world.</h1>
+            <a href="#explode"><button id="btn">Press this</button></a>
+        </div>
+    </div>
+
+    <div id="explode">        
+        <audio id="audio" src="assets/loud-explosion.mp3"></audio>
+        <h1>And joining Devsoc will help me take step forward to that dream (I hope so 🙏)</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
