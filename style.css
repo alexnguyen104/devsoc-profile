@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 * {
     padding: 0;
     margin: 0;
+    font-family: "Pixelify Sans", sans-serif;
 }
 #home{
     display: flex;
@@ -10,18 +10,26 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: "Playfair Display", serif;
-    font-size: 90px;
-    color: white;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 100px;
+    color: black;
     text-align: center;
-    background: url("assets/bg.jpg");
+    background: url("assets/bg_1.jpg");
+}
+#home.dark {
+    background: url("assets/bg2.jpg");
+}
+
+#home span{
+    color: #fff;
 }
 
 #home button{
     font-size: 40px;
-    margin-top: 2%;
     padding: 10px;
     border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     animation: flicker 1s infinite alternate;
@@ -58,18 +66,16 @@
     background-color: rgb(191, 188, 188);
 }
 
-#home a{
-    text-decoration-line: none;
-    color: black;
-
-}
-
 #detail{
     height: 100vh;
-    background: url(assets/bg2.jpg);
+    background: url("assets/bg.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#detail.dark {
+    background: url("assets/bg4.jpg");
 }
 
 #detail #page{
@@ -79,21 +85,16 @@
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
 }
 
 #detail #content{
     margin-top: 50px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
 }
 
 #detail h1{
-    font-family: "Playfair Display", serif;
+    font-family: "Pixelify Sans", sans-serif;
     text-align: center;
 }
 
@@ -129,8 +130,12 @@
     text-align: center;
 }
 
+#hobbies.dark {
+    background: url("assets/bg6.jpg");
+}
+
 #hobbies h1{
-    font-family: "Playfair Display", serif;
+    font-family: "Pixelify Sans", sans-serif;
     color: white;
     margin-bottom: 50px;
 }
@@ -147,7 +152,7 @@
 }
 
 #hobbies button{
-    font-family: "Playfair Display", serif;
+    font-family: "Pixelify Sans", sans-serif;
     border-radius: 5px;
     font-size: 30px;
     padding: 20px;
@@ -161,13 +166,16 @@
 
 #dream{
     height: 100vh;
-    background: url("assets/bg4.jpg");
+    background: url("assets/bg.jpg");
     display: flex;
     justify-content: center;
     padding: 100px;
     cursor: pointer;
 }
 
+#dream.dark {
+    background: url("assets/bg4.jpg");
+}
 
 #dream #content2{
     width: 70%;
@@ -178,15 +186,15 @@
 
 #dream h1{
     color: black;
-    font-family: "Playfair Display", serif;
+    font-family: "Pixelify Sans", sans-serif;
     font-size: 50px;
-    margin: 50px;
+    margin: 30px;
 }
 
 #dream button{
-    font-family: "Playfair Display", serif;
+    font-family: "Pixelify Sans", sans-serif;
     border-radius: 5px;
-    font-size: 30px;
+    font-size: 25px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: none;
@@ -195,6 +203,28 @@
 #dream button:hover{
     background-color: rgb(195, 196, 196);
 }
+
+#top_btn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+}
+#top_btn:hover {
+  background-color: rgb(255, 255, 255, 0.5);
+  color: black;
+}
+
 #later, #later2, #dream button{
     visibility: hidden;
 }
@@ -243,8 +273,59 @@
 
 #explode h1{
     color: white;
-    font-family: "Playfair Display", serif;
+    font-family: "Pixelify Sans", sans-serif;
     font-size: 50px;
     margin: 50px;
     text-align: center;
+}
+
+/* LIGHT - DARK BUTTON */
+#toggle_btn {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 20px;
+    left: 20px;
+}
+
+/* body.dark {background-color: #292c35;} #9b59b6 */
+
+/* body.dark h1, body.dark .support a {color: #fff;} */
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 60px;
+  height: 36px;
+  border-radius: 60px;
+  position: relative;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fa-moon {color: #f39c12;}
+
+.fa-sun {color: #f1c40f;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
 }
