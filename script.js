@@ -15,6 +15,12 @@ document.getElementById("start").onclick = function(){
     window.location = "#detail"
 }
 
+document.getElementById("btn").onclick = function(){
+    var audio = document.getElementById("background_music1");
+    audio.play();
+    window.location = "#explosion"
+}
+
 function to_top() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
