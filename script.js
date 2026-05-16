@@ -26,6 +26,23 @@ function to_top() {
 }
 
 const checkbox = document.getElementById("checkbox")
+
+
+checkbox.checked = true;
+
+document.body.classList.add("dark")
+document.getElementById("home").classList.add("dark")
+document.getElementById("detail").classList.add("dark")
+document.getElementById("hobbies").classList.add("dark")
+document.getElementById("dream").classList.add("dark")
+
+document.getElementById("icon").className = "fas fa-moon"
+document.getElementById("info").style.color = "white"
+document.getElementById("home").getElementsByTagName("span")[0].style.color = "wheat"
+document.getElementById("kirby").src = "assets/pic.gif"
+document.getElementsByClassName("checkbox-label")[0].style.backgroundColor = "white"
+document.getElementsByClassName("ball")[0].style.backgroundColor = "black"
+
 checkbox.addEventListener("change", () => {
     document.body.classList.toggle("dark")
     document.getElementById("home").classList.toggle("dark")
